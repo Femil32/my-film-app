@@ -14,4 +14,4 @@ const dataSchema = new mongoose.Schema(
   { timestamps: true, versionKey: false }
 );
 
-module.exports = mongoose.model("User", dataSchema);
+module.exports = mongoose.model("Users", dataSchema);
