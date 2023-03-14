@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import filmreelimg from "../../assets/img/base/film-reel.png";
 import Sawo from "sawo";
 import { useDispatch, useSelector } from "react-redux";
-import { authentication, OTPUser, registerUser, setAuth } from "../../store/auth/slice";
+import { authentication, loginUser, OTPUser, registerUser, setAuth } from "../../store/auth/slice";
 import { toast } from "react-toastify";
 import { Formik, Form } from "formik";
 import {
@@ -20,7 +20,7 @@ import { parsePhoneNumber } from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import { commonMsg } from "../../components/common/ValidationConstants";
 
-const SignIn = () => {
+const LogIn = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const loginResponse = useSelector((state) => state.auth);
@@ -31,10 +31,10 @@ const SignIn = () => {
   useEffect(() => {
     if (
       loginResponse.status === "succeed" &&
-      loginResponse.type === "REGISTER_API"
+      loginResponse.type === "LOGIN_API"
     ) {
-      toast.success('Register Success.')
-      navigate("/auth/login", { state: payload });
+      toast.success('Login Success.')
+      navigate("/dashboard");
       // dispatch(setAuth());
     }
   }, [loginResponse]);
@@ -79,13 +79,13 @@ const SignIn = () => {
 
           <div
             className="col-lg-4 col-12 d-flex justify-content-center align-items-center p-5"
-            id="signIn"
+            id="LogIn"
           >
             <div className="col-12">
               <div className="sign-head-text">
                 <H1Tag
                   classes="sign-head fw-bold text-dark-blue mt-2"
-                  title="Sign in"
+                  title="Log in"
                 />
                 <PTag
                   classes="sign-text text-dark-gray mt-3"
@@ -111,7 +111,7 @@ const SignIn = () => {
                 })}
                 onSubmit={(values) => {
                   console.log(values);
-                  dispatch(registerUser(values))
+                  dispatch(loginUser(values))
                   // if (isValidPhoneNumber(values.mobile)) {
                   //   const { nationalNumber, countryCallingCode } =
                   //     parsePhoneNumber(values.mobile);
@@ -241,4 +241,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default LogIn;

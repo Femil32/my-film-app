@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, isRejectedWithValue } from '@reduxjs/toolkit'
-import { axiosApi, axiosAuthApi } from '../../helpers/axios'
+import { axiosApi, axiosAuthApi, axiosTestApi } from '../../helpers/axios'
 import initialStates from './state'
 import { ACCESS_TOKEN, COUNTRY_CODE, FBM_USER_ID, GUEST_TOKEN, MOBILE_NO } from '../../utils/constants'
 import { toast } from 'react-toastify'
@@ -66,14 +66,15 @@ export const authentication = createAsyncThunk('authentication', async (data, { 
 // register
 export const loginUser = createAsyncThunk('loginUser', async (data, { rejectWithValue }) => {
     try {
-        const response = await axiosApi.post('/fbmuser/login', data)
+        const response = await axiosApi.post('/user/login', data)
+        console.log(response);
         if (response.token) {
-            axiosApi.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`
+            axiosTestApi.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`
             localStorage.setItem(ACCESS_TOKEN, response.token)
-            localStorage.setItem(MOBILE_NO, response.mobile)
-            localStorage.setItem(COUNTRY_CODE, response.countryCode)
-            localStorage.setItem(FBM_USER_ID, response.fbmUserId)
-            localStorage.removeItem(GUEST_TOKEN)
+            localStorage.setItem(USER_EMAIL, response.email)
+            // localStorage.setItem(COUNTRY_CODE, response.countryCode)
+            // localStorage.setItem(FBM_USER_ID, response.fbmUserId)
+            // localStorage.removeItem(GUEST_TOKEN)
         }
         return response.data
     } catch (error) {
@@ -88,13 +89,14 @@ export const loginUser = createAsyncThunk('loginUser', async (data, { rejectWith
 // register
 export const registerUser = createAsyncThunk('registerUser', async (data, { rejectWithValue }) => {
     try {
-        const response = await axiosApi.post('/fbmuser/register', data)
-        localStorage.setItem(FBM_USER_ID, response.data.fbmUserId)
-        localStorage.setItem(ACCESS_TOKEN, response.data.token)
-        localStorage.removeItem(GUEST_TOKEN)
-        if (response.token) {
-            axiosApi.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`
-        }
+        const response = await axiosTestApi.post('/user/register', data)
+        console.log(response);
+        // localStorage.setItem(FBM_USER_ID, response.data.fbmUserId)
+        // localStorage.setItem(ACCESS_TOKEN, response.data.token)
+        // localStorage.removeItem(GUEST_TOKEN)
+        // if (response.token) {
+        //     axiosApi.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`
+        // }
         return response
     } catch (error) {
         if (!error.response) {
