@@ -1,78 +1,21 @@
 {
-    "name": "my-film-app",
-    "version": "1.0.0",
-    "description": "Filmboard is unique e-commerce platform that enables filmmakers to book verified film-related services, locations, crew and talent in few easy steps online.",
-    "main": ".env.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/manthantalkd/myfilmapp.git"
-    },
-    "keywords": [
-        "FilmFilmboard",
-        "Film",
-        "Filmboard",
-        "e-commerce",
-        "platform",
-        "that",
-        "enables",
-        "filmmakers",
-        "to",
-        "book",
-        "verified",
-        "film-related",
-        "services",
-        "locations",
-        "crew",
-        "and",
-        "talent",
-        "in",
-        "few",
-        "easy",
-        "steps",
-        "online."
-    ],
-    "author": "Manthan Thummar",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/manthantalkd/myfilmapp/issues"
-    },
-    "homepage": "https://github.com/manthantalkd/myfilmapp#readme",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "@reduxjs/toolkit": "^1.7.1",
-        "@splidejs/react-splide": "^0.6.17",
-        "async": "^3.2.3",
-        "axios": "^0.24.0",
-        "bootstrap": "5.1.3",
-        "formik": "^2.2.9",
-        "moment": "^2.29.3",
-        "otp-input-react": "^0.3.0",
-        "photoswipe": "^5.2.7",
-        "react": "^17.0.2",
-        "react-bootstrap": "^2.1.2",
-        "react-dom": "^17.0.2",
-        "react-form-stepper": "^1.4.3",
-        "react-icons": "^4.3.1",
-        "react-infinite-scroll-component": "^6.1.0",
-        "react-multi-date-picker": "^3.3.0",
-        "react-paginate": "^8.1.3",
-        "react-phone-number-input": "^3.1.51",
-        "react-redux": "^7.2.6",
-        "react-router-dom": "^6.2.1",
-        "react-select": "^5.2.1",
-        "react-toastify": "^8.1.0",
-        "sawo": "^1.0.2",
-        "sweetalert2": "^11.3.4",
-        "swiper": "^8.1.5",
-        "yup": "^0.32.11"
-    },
-    "devDependencies": {
-        "@vitejs/plugin-react": "^1.0.7",
-        "sass": "^1.45.1",
-        "vite": "^2.7.2"
-    }
+  "name": "my-film-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.0"
+  }
 }
