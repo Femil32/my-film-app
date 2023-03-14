@@ -1,0 +1,63 @@
+// base
+@import "base//variable";
+@import "base/mixin";
+@import "base/base";
+// layout
+@import "layout/layout";
+// page
+// auth
+@import "page/auth/sign-page";
+@import "page/auth/otp";
+@import "page/auth/successful";
+// profile
+@import "page/profile/profile";
+@import "page/profile/my-profile";
+@import "page/profile/my-profile-details";
+// all-category-crew
+@import "page/all-category-crew/all-category";
+@import "page/all-category-crew/listing";
+// job Requirement1
+@import "page/jobRequirement/jobRequirement";
+@import "page/jobRequirement/social-details";
+// addedInventories
+@import "page/addedInventories/addedInventories";
+// Seller ConfirmedAvailability
+@import "page/sellerConfirmedAvailability/sellerConfirmedAvailability";
+// dashboard
+@import "page/dashboard/dashboard";
+@import "page/home";
+// swiper
+@import "page/swiper/swiper";
+// modal
+@import "page/modal/modal";
+// plugins
+@import "page/plugins/AllPlugin";
+
+// buyer page css
+
+// recurring Payment
+@import "page/buyerpage/recurringPayment";
+//AddProject
+@import "page/buyerpage/addproject/addProject";
+
+
+// pages scss
+@import "page/common/search";
+@import "page/common/home";
+@import "page/common/wallet";
+@import "page/common/listing";
+@import "page/common/profile";
+@import "page/common/dashboardOption";
+@import "page/common/crewStyle";
+@import "page/common/talentdetails";
+@import "page/common/locationStyle";
+@import "page/common/inventoryStyle";
+@import "page/common/sellerConfirmedAvailability";
+@import "page/common/coupon";
+@import "page/common/projectDetails";
+@import "page/common/jobRequirement";
+
+// components
+@import "components/designComponents";
+@import "components/search";
+@import "components/customLoader";
