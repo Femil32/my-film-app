@@ -1,0 +1,32 @@
+.profile-model {
+    label {
+        width: 0 !important;
+    }
+}
+
+.h-unset {
+    height: unset;
+}
+
+.edit-profile-modal {
+    label {
+        width: 0 !important;
+    }
+}
+
+#reviews .swiper-button-prev,
+#reviews .swiper-button-next {
+    width: 45px;
+}
+
+#portfolio:target {
+    scroll-margin-top: 60px;
+}
+
+#overview:target {
+    scroll-margin-top: 60px;
+}
+
+#reviews:target {
+    scroll-margin-top: 60px;
+}
