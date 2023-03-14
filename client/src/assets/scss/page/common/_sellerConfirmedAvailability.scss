@@ -1,0 +1,47 @@
+.remove-button-accordin {
+    .accordion-collapse.show~.accordion-buttons {
+        display: none;
+    }
+}
+
+.close-icon {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.accordion-header {
+    .accordion-button {
+        padding: 0 !important;
+    }
+}
+
+
+.BasicDetails{
+    .nav-tabs{
+
+
+    .nav-link {
+
+        border: none;
+        .nav-link{
+            border: none;
+            font-size: 16px;
+            padding: 0px;
+            margin-right: 2rem;
+            font-weight: bold;
+            color: #495057;
+    
+            &.active{
+                color: black ;
+                border-bottom: 2px solid orangered;
+            }
+        }  
+    } 
+        &.active {
+            color: black;
+        }
+    }
+}
+
