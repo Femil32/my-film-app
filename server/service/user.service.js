@@ -50,10 +50,12 @@ Service.Login = async (body) => {
         expiresIn: "24h",
       });
       user.token = token;
+
       return {
         status: true,
         statusCode: 200,
         message: "You Have Successfully Logged",
+        email: user[0].email,
         token: token,
       };
     }

@@ -16,7 +16,7 @@ const APIService = {
 };
 
 router
-  .post("/add", APIService.AddSubSubCategory)
-  .get("/fetch", APIService.FetchSubSubCategory);
+  .post("/add", verifyToken, APIService.AddSubSubCategory)
+  .get("/fetch", verifyToken, APIService.FetchSubSubCategory);
 
 module.exports = router;

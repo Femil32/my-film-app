@@ -5,18 +5,18 @@ const { filterResp } = require("../helper/functions");
 const verifyToken = require("../middleware/auth");
 
 const APIService = {
-  AddCategory: async (req, res) => {
-    const resp = await CategoryService.AddCategory(req.body);
+  AddDashboard: async (req, res) => {
+    const resp = await CategoryService.AddDashboard(req.body);
     res.status(resp.statusCode).json(filterResp(resp));
   },
-  FetchCategory: async (req, res) => {
-    const resp = await CategoryService.FetchCategory();
+  FetchDashboard: async (req, res) => {
+    const resp = await CategoryService.FetchDashboard();
     res.status(resp.statusCode).json(filterResp(resp));
   },
 };
 
 router
-  .post("/add", verifyToken, APIService.AddCategory)
-  .get("/fetch", verifyToken, APIService.FetchCategory);
+  .post("/add", APIService.AddDashboard)
+  .get("/fetch", APIService.FetchDashboard);
 
 module.exports = router;
