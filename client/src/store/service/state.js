@@ -1,0 +1,17 @@
+export default {
+    status: null,
+    error: null,
+    type: null,
+    allInventoryTypes: [],
+    allInventorySubTypes: [],
+    portfolioPhotos: [],
+    rateAndTermLabel: [],
+    userProfile: {},
+    rateAndTerm: {},
+    addInventory: {},
+    getInventory: {},
+    servicesBascDetails: {},
+    inventoryDetailes: {},
+    service_portfolio_links: {},
+    serviceProfileCost: {},
+};
