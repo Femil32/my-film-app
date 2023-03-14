@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-Artboard_1">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <rect width="64" height="64" fill="#fff"/>
+    <g id="Group_22541" data-name="Group 22541" transform="translate(0.002 4.001)">
+      <g id="Group_19431" data-name="Group 19431" transform="translate(-0.002 -0.001)">
+        <g id="Group_19430" data-name="Group 19430" transform="translate(51.347 24.162)">
+          <path id="Path_20251" data-name="Path 20251" d="M1358.477,464.132a2.1,2.1,0,0,1-2.515,2.059,12.653,12.653,0,0,1,0-24.8,2.1,2.1,0,0,1,2.515,2.059Z" transform="translate(-1345.824 -441.348)" fill="#1a3556"/>
+        </g>
+        <path id="Path_20252" data-name="Path 20252" d="M1185.283,414.255h-.494a7.562,7.562,0,0,1-13.406,0h-12.631a4.952,4.952,0,1,1-9.9.027,9.3,9.3,0,0,0-8.595,9.24v19.883a9.293,9.293,0,0,0,9.267,9.268h35.766a9.3,9.3,0,0,0,9.268-9.268v-19.89a9.3,9.3,0,0,0-9.272-9.261Z" transform="translate(-1140.253 -396.864)" fill="#ff4e00"/>
+        <path id="Path_20253" data-name="Path 20253" d="M1250.041,350.942a7.568,7.568,0,1,1-7.568,7.568,7.568,7.568,0,0,1,7.568-7.568m0-6.316a13.882,13.882,0,1,0,13.882,13.882,13.882,13.882,0,0,0-13.882-13.882Z" transform="translate(-1212.205 -344.626)" fill="#1a3556"/>
+        <path id="Path_20254" data-name="Path 20254" d="M1167.208,382.017a4.952,4.952,0,1,1-4.952,4.952,4.952,4.952,0,0,1,4.952-4.952m0-4.131a9.084,9.084,0,1,0,9.084,9.084,9.084,9.084,0,0,0-9.084-9.084Z" transform="translate(-1153.658 -369.578)" fill="#1a3556"/>
+      </g>
+      <path id="Path_20255" data-name="Path 20255" d="M1225.139,482.783a12.653,12.653,0,0,1-24.8,0,2.1,2.1,0,0,1,2.059-2.515h20.692a2.1,2.1,0,0,1,2.05,2.515Z" transform="translate(-1185.295 -446.396)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
