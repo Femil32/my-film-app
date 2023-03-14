@@ -4,7 +4,7 @@ const errObject = { status: false };
 
 const Service = {};
 
-Service.AddCategory = async (body) => {
+Service.AddDashboard = async (body) => {
   try {
     const user = new Model(body);
     const data = await user.save();
@@ -19,7 +19,7 @@ Service.AddCategory = async (body) => {
     return errObject;
   }
 };
-Service.FetchCategory = async () => {
+Service.FetchDashboard = async () => {
   try {
     const data = await Model.find({});
     return {

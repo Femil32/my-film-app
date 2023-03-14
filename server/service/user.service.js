@@ -12,7 +12,7 @@ Service.Register = async (body) => {
     if (user) {
       return {
         status: false,
-        statusCode: 500,
+        statusCode: 401,
         message: "Email Address is Already Registered",
       };
     } else {
@@ -42,7 +42,7 @@ Service.Login = async (body) => {
     if (user <= 0) {
       return {
         status: false,
-        statusCode: 500,
+        statusCode: 401,
         message: "Incorrect email or password",
       };
     } else {
