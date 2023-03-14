@@ -1,18 +1,17 @@
-const Model = require("../model/subSubCategory");
+const Model = require("../model/dashboard");
 
 const errObject = { status: false };
 
 const Service = {};
 
-Service.AddSubSubCategory = async (body) => {
+Service.AddCategory = async (body) => {
   try {
-    const options = { ordered: true };
-
-    const body = await Model.insertMany(data, options);
+    const user = new Model(body);
+    const data = await user.save();
     return {
       status: true,
       statusCode: 200,
-      body,
+      data,
     };
   } catch (err) {
     errObject.statusCode = 500;
@@ -20,8 +19,7 @@ Service.AddSubSubCategory = async (body) => {
     return errObject;
   }
 };
-
-Service.FetchSubSubCategory = async () => {
+Service.FetchCategory = async () => {
   try {
     const data = await Model.find({});
     return {
