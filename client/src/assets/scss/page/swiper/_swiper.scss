@@ -1,0 +1,65 @@
+.navigation-down {
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: unset !important;
+        bottom: 0 !important;
+        z-index: 9988;
+    }
+
+    .swiper-button-next {
+        right: 47%;
+        width: 30px;
+        height: 30px;
+
+        &::after {
+            content: '';
+            font-size: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
+            background-position: center;
+            background-size: cover;
+            background-image: url("data:image/svg+xml,%3Csvg id='Group_19519' data-name='Group 19519' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Crect id='Rectangle_5029' data-name='Rectangle 5029' fill='none'%3E%3C/rect%3E%3Cline id='Line_848' data-name='Line 848' x1='20.625' transform='translate(4.688 15)' fill='none' stroke='%231a3556' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/line%3E%3Cpath id='Path_21838' data-name='Path 21838' d='M48.438,56,40,64.438l8.438,8.438' transform='translate(-35.313 -49.438)' fill='none' stroke='%231a3556' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/path%3E%3C/svg%3E");
+        }
+
+        @media (max-width: 1200px) {
+            right: 45%;
+        }
+
+        @media (max-width: 776px) {
+            right: 42%;
+        }
+        @media (max-width: 420px) {
+            right: 40%;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 47%;
+        width: 30px;
+        height: 30px;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("data:image/svg+xml,%3Csvg id='Group_19519' data-name='Group 19519' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Crect id='Rectangle_5029' data-name='Rectangle 5029' fill='none'%3E%3C/rect%3E%3Cline id='Line_848' data-name='Line 848' x1='20.625' transform='translate(4.688 15)' fill='none' stroke='%231a3556' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/line%3E%3Cpath id='Path_21838' data-name='Path 21838' d='M48.438,56,40,64.438l8.438,8.438' transform='translate(-35.313 -49.438)' fill='none' stroke='%231a3556' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/path%3E%3C/svg%3E");
+        }
+
+        @media (max-width: 1200px) {
+            left: 45%;
+        }
+
+        @media (max-width: 776px) {
+            left: 42%;
+        }
+        @media (max-width: 420px) {
+            left: 40%;
+        }
+    }
+}

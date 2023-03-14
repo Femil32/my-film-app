@@ -1,0 +1,30 @@
+.camera-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px $shadow-color;
+    transform: translate(30%, -50%);
+    img {
+        width: 25px;
+    }
+}
+
+.plus-number-inputs {
+    padding: 10px 15px;
+    .plus-phone-start-number {
+        padding: 5px 0;
+        padding-right: 10px;
+        border-right: 1px solid #DEE4EB;
+    }
+    .plus-phone-input {
+        padding: 5px;
+        padding-left: 10px;
+    }
+}

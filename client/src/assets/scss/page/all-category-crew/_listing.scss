@@ -1,0 +1,57 @@
+.hide-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+
+    .product-img {
+        height: 250px;
+    }
+
+    .like-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        border: 1px solid #526276;
+        transition: all 0.4s linear;
+
+        &:hover {
+            border: 1px solid $red;
+
+            .Ai-Fill-Heart {
+                path {
+                    fill: $red;
+                }
+            }
+        }
+    }
+
+    .like-box.active {
+        border: 1px solid $red;
+    }
+}
+
+.sort {
+    .check-icon {
+        display: none;
+    }
+
+    &.active {
+        color: $navy-blue;
+
+        .check-icon {
+            display: block;
+        }
+    }
+}

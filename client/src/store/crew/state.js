@@ -1,0 +1,15 @@
+export default {
+    status: null,
+    error: null,
+    type: null,
+    category: {},
+    rateAndTerm: {},
+    rateAndTermLabel: [],
+    crew_portfolio_links: [],
+    crewProfilePhoto: null,
+    crewBasicDetails: null,
+    portfolioPhotos: {},
+    dynamicFields: {},
+    vitalDetails: {},
+    crewProfileCost: {},
+}

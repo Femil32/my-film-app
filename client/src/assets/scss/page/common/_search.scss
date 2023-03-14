@@ -1,0 +1,41 @@
+.search {
+    .shadow-accordion {
+        &>.accordion.accordion-flush {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+
+        .search-accoedian {
+            .accordion {
+
+                &>li {
+                    order: 2 !important;
+                }
+
+                &>div {
+                    order: 1 !important;
+                }
+            }
+
+            .accordion-body {
+                padding: 0 !important;
+                padding-top: 1rem !important;
+            }
+
+            .accordion-item:not(:last-child) {
+                .accordion-header {
+                    .accordion-button.collapsed {
+                        margin-bottom: 1rem !important;
+                    }
+                }
+            }
+
+            li {
+                list-style: disc !important;
+                list-style-position: inside;
+            }
+        }
+    }
+}

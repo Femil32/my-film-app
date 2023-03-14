@@ -1,0 +1,27 @@
+.listing {
+    .nav-item {
+        width: 100px;
+        text-align: center;
+    }
+}
+
+.filterMenu {
+    height: 196px;
+
+    .filterTag {
+        height: 100%;
+        width: 40%;
+        overflow-y: auto;
+    }
+
+    .filterType {
+        overflow-y: auto;
+        height: 100%;
+        width: 60%;
+
+        span:hover {
+            background: #427cc3;
+            color: #ffffff;
+        }
+    }
+}
