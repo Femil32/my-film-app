@@ -21,4 +21,19 @@ Service.AddSubSubCategory = async (body) => {
   }
 };
 
+Service.FetchSubSubCategory = async () => {
+  try {
+    const data = await Model.find({});
+    return {
+      status: true,
+      statusCode: 200,
+      data,
+    };
+  } catch (err) {
+    errObject.statusCode = 500;
+    errObject.err = err.message;
+    return errObject;
+  }
+};
+
 module.exports = Service;

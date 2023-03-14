@@ -9,8 +9,14 @@ const APIService = {
     const resp = await SubCategoryService.AddSubCategory(req.body);
     res.status(resp.statusCode).json(filterResp(resp));
   },
+  FetchSubCategory: async (req, res) => {
+    const resp = await SubCategoryService.FetchSubCategory(req.body);
+    res.status(resp.statusCode).json(filterResp(resp));
+  },
 };
 
-router.post("/add", APIService.AddSubCategory);
+router
+  .post("/add", APIService.AddSubCategory)
+  .get("/fetch", APIService.FetchSubCategory);
 
 module.exports = router;
