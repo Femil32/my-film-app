@@ -1,0 +1,34 @@
+.categories {
+    .categorie {
+        a {
+            color: $dark-gray;
+        }
+        &.active {
+            a {
+                color: $dark-blue;
+            }
+        }
+        &:hover {
+            a {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+.searches-texts {
+    color: $gray;
+    &:hover {
+        color: $navy-blue;
+        .time-icon {
+            path {
+                stroke: $navy-blue;
+            }
+        }
+    }
+}
